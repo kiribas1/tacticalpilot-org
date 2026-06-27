@@ -3,71 +3,355 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="TacticalPilot | CRM для адаптации и автоматизации рабочих процессов"
-  description="Стандартизируйте адаптацию каждого нового сотрудника и ведите аудиторский след задач, согласований и подтверждений. Активация компании от начала до конца."
+  title="TacticalPilot — Онбординг и автоматизация рабочих процессов"
+  description="TacticalPilot помогает компаниям адаптировать сотрудников с помощью пошаговых инструкций, разрешений, ролевых задач и маршрутизации CRM-запросов — многоязычная и адаптированная по странам система."
   lang="ru"
 >
   <Fragment slot="logo">TacticalPilot</Fragment>
   <Fragment slot="footer-name">TacticalPilot</Fragment>
 
-  <section class="hero">
-    <img src="/images/logo.webp" alt="Logo" class="hero-logo" width="200" height="auto" />
-    <h1>TacticalPilot</h1>
-    <p class="tagline">Активация компании от начала до конца</p>
-    <p>Стандартизируйте адаптацию каждого нового сотрудника и ведите аудиторский след задач, согласований и подтверждений.</p>
+  <!-- HERO -->
+  <section class="tp-hero position-relative overflow-hidden">
+    <div class="tp-hero-bg"></div>
+    <div class="tp-container position-relative tp-py-5">
+      <div class="tp-row">
+        <div class="tp-col-left">
+          <div class="tp-pill">
+            <span class="tp-dot"></span>
+            <span class="tp-pill-text">Закрытая бета-версия</span>
+            <span class="tp-divider"></span>
+            <span class="tp-pill-sub">Платформа работает — доступ предоставляется по приглашению.</span>
+          </div>
+          <div class="tp-hero-brand">
+            <img src="/images/logo.webp" alt="TacticalPilot" class="tp-logo" width="100" height="100" />
+            <div>
+              <h1 class="tp-title">TacticalPilot</h1>
+              <div class="tp-subtitle">CRM для онбординга и автоматизации рабочих процессов</div>
+            </div>
+          </div>
+          <p class="tp-lead">
+            Единое рабочее пространство для адаптации сотрудников, выполнения операционных шагов, назначения разрешений и маршрутизации запросов клиентов — многоязычное и адаптированное по странам.
+          </p>
+          <div class="tp-badges">
+            <span class="tp-badge">Шаги онбординга</span>
+            <span class="tp-badge">Разрешения и группы</span>
+            <span class="tp-badge">Ролевые процессы</span>
+            <span class="tp-badge">Маршрутизация CRM</span>
+            <span class="tp-badge">Многоязычность</span>
+          </div>
+          <div class="tp-buttons">
+            <a class="tp-btn-primary" href="mailto:info@tacticalpilot.org?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20(TacticalPilot)">Запросить приглашение</a>
+            <a class="tp-btn-outline" href="#how-it-works">Как это работает</a>
+          </div>
+          <div class="tp-contact">
+            Контакт: <a href="mailto:info@tacticalpilot.org">info@tacticalpilot.org</a>
+          </div>
+        </div>
+        <div class="tp-col-right">
+          <div class="tp-card-glass">
+            <div class="tp-card-header">
+              <div class="tp-card-title">Активация компании, от начала до конца</div>
+              <span class="tp-badge-beta">Beta</span>
+            </div>
+            <div class="tp-card-mini">Стандартизируйте процесс для каждого нового сотрудника и ведите журнал аудита задач, согласований и доказательств.</div>
+            <img src="/images/logo.webp" class="tp-card-img" alt="Превью TacticalPilot" loading="lazy" />
+            <ul class="tp-card-list">
+              <li>Руководители определяют необходимые шаги (почта, инструменты, доступы, документы...).</li>
+              <li>Сотрудники выполняют шаги в управляемом личном рабочем пространстве.</li>
+              <li>Запросы и исключения маршрутизируются с SLA, заметками и доказательствами.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="ad-slot">Рекламное место - Google AdSense</div>
 
-  <div class="card-grid">
-    <article class="card">
-      <h2>Рабочий процесс адаптации</h2>
-      <p>Руководители определяют необходимые шаги (почта, инструменты, доступы, документы). Ролевые чек-листы для настройки почты, выдачи устройств, протоколов безопасности, документации и региональных требований.</p>
-    </article>
-    <article class="card">
-      <h2>Управляемое рабочее пространство</h2>
-      <p>Сотрудники выполняют шаги в управляемом личном пространстве. Каждый шаг отслеживается по статусу, заметкам и подтверждениям.</p>
-    </article>
-    <article class="card">
-      <h2>Маршрутизация CRM</h2>
-      <p>Запросы клиентов направляются соответствующим сотрудникам с учётом SLA, отслеживания статуса, заметок и полной аудиторской документации.</p>
-    </article>
-    <article class="card">
-      <h2>Разрешения и группы</h2>
-      <p>Назначение разрешений на уровне группы или индивидуально. Разрешения автоматически запускают связанные задачи и процессы согласования.</p>
-    </article>
-    <article class="card">
-      <h2>Учёт страновых особенностей</h2>
-      <p>Поддержка региональных операционных различий и локализованных процедур для международных команд.</p>
-    </article>
-    <article class="card">
-      <h2>Многоязычность</h2>
-      <p>Сотрудники видят контент на своём языке, а руководство получает единую отчётность.</p>
-    </article>
-  </div>
+  <!-- HOW IT WORKS -->
+  <section class="tp-light" id="how-it-works">
+    <div class="tp-container tp-py-5">
+      <div class="tp-section-header">
+        <div>
+          <h2 class="tp-section-title">Как это работает</h2>
+          <p class="tp-section-sub">Создавайте ролевой онбординг, задачи на основе разрешений и маршрутизацию CRM — в единой системе.</p>
+        </div>
+        <a class="tp-btn-dark" href="mailto:info@tacticalpilot.org?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%B4%D0%B5%D0%BC%D0%BE%20(TacticalPilot)">Запросить демо</a>
+      </div>
 
-  <div class="ad-slot">Рекламное место - Google AdSense</div>
+      <div class="tp-features-grid">
+        <div class="tp-feature">
+          <div class="tp-icon-light">1</div>
+          <h3 class="tp-feature-title">Процесс онбординга</h3>
+          <p class="tp-feature-text">Создайте чек-лист для каждой роли: аккаунты, почтовые псевдонимы, устройства, правила безопасности, необходимые документы, шаги для конкретных стран.</p>
+        </div>
+        <div class="tp-feature">
+          <div class="tp-icon-light">2</div>
+          <h3 class="tp-feature-title">Разрешения создают задачи</h3>
+          <p class="tp-feature-text">Назначайте разрешения по группам или индивидуально. Каждое разрешение может автоматически генерировать задачи и согласования.</p>
+        </div>
+        <div class="tp-feature">
+          <div class="tp-icon-light">3</div>
+          <h3 class="tp-feature-title">Маршрутизация CRM</h3>
+          <p class="tp-feature-text">Запросы клиентов направляются назначенному сотруднику/команде с SLA, статусом, заметками и журналом аудита.</p>
+        </div>
+      </div>
 
-  <section class="registration-info">
-    <h2>Контакты и регистрация</h2>
-    <p><strong>Почта:</strong> info@tacticalpilot.org</p>
-    <p><strong>Статус:</strong> Работает - Закрытая бета по приглашениям</p>
-    <p><strong>Местоположение:</strong> Noregon - London (KI)</p>
-    <p><strong>Лицензия:</strong> KBN-40-000003 (KIFA)</p>
+      <div class="tp-panels-grid">
+        <div class="tp-panel">
+          <h3 class="tp-feature-title">Операции с учетом страны</h3>
+          <p class="tp-feature-text">Роли и процедуры могут отличаться в зависимости от страны. TacticalPilot поддерживает правила по странам, обязательные шаги и локализованный контент.</p>
+        </div>
+        <div class="tp-panel">
+          <h3 class="tp-feature-title">Многоязычность по умолчанию</h3>
+          <p class="tp-feature-text">Сотрудники из разных стран видят шаги и задачи на своем языке, а руководители получают единую отчетность.</p>
+        </div>
+      </div>
+
+      <div class="tp-cta-light">
+        <div class="tp-cta-content">
+          <div>
+            <h2 class="tp-cta-title">TacticalPilot запущен (бета)</h2>
+            <p class="tp-feature-text">Доступ в настоящее время только по приглашению. Отправьте письмо и сообщите размер вашей компании и сценарий использования, чтобы получить приглашение.</p>
+          </div>
+          <a class="tp-btn-primary" href="mailto:info@tacticalpilot.org?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20(TacticalPilot)">Запросить приглашение</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="ad-slot">Рекламное место - Google AdSense</div>
+
+  <section class="tp-footer-info">
+    <div class="tp-footer-licence">
+      <p>&copy; 2026 Tactical Pilot. Все права защищены.</p>
+      <p>Адрес: Noregon - London (KI)</p>
+      <p><strong>Номер лицензии:</strong> KBN-40-000003</p>
+      <p>Регулятор: Kiribati International Financial Authority (KIFA)</p>
+    </div>
+  </section>
 </BaseLayout>
 
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+</style>
+
 <style>
-  .hero-logo {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+  :root {
+    --tp-bg: #0b0c10;
+    --tp-card: rgba(255,255,255,.06);
+    --tp-border: rgba(255,255,255,.14);
+    --tp-text: rgba(255,255,255,.86);
+    --tp-muted: rgba(255,255,255,.62);
   }
-  .tagline { font-size: 1.4rem; font-weight: 600; opacity: 1; margin-bottom: 8px; }
-  .registration-info { background: white; border-radius: 8px; padding: 32px; margin-top: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; }
-  .registration-info h2 { margin-bottom: 16px; color: #1a1a2e; }
-  .registration-info p { margin: 6px 0; color: #555; }
+
+  .tp-container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  .tp-py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+
+  /* HERO */
+  .tp-hero {
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-hero-bg {
+    position: absolute; inset: -2px;
+    background:
+      radial-gradient(800px 400px at 20% 20%, rgba(80,120,255,.35), transparent 60%),
+      radial-gradient(600px 380px at 80% 30%, rgba(170,60,255,.28), transparent 65%),
+      radial-gradient(700px 500px at 55% 95%, rgba(40,220,160,.18), transparent 55%),
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+    filter: saturate(1.05);
+    pointer-events: none;
+  }
+  .tp-row {
+    display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;
+  }
+  .tp-col-left { flex: 1; min-width: 300px; }
+  .tp-col-right { flex: 0 0 380px; min-width: 280px; }
+  @media(max-width:900px) { .tp-col-right { flex: 1 1 100%; } }
+
+  .tp-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px; padding: 8px 12px;
+    color: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    margin-bottom: 16px; font-size: .85rem;
+  }
+  .tp-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #4cffb5;
+    box-shadow: 0 0 0 3px rgba(76,255,181,.16);
+    flex-shrink: 0;
+  }
+  .tp-divider {
+    width: 1px; height: 16px;
+    background: rgba(255,255,255,.18);
+  }
+  .tp-pill-text { font-weight: 600; }
+  .tp-pill-sub { color: rgba(255,255,255,.7); }
+
+  .tp-hero-brand {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 16px;
+  }
+  .tp-logo {
+    border-radius: 14px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
+    padding: 10px;
+  }
+  .tp-title {
+    font-size: 2.5rem; font-weight: 600; margin: 0;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-subtitle { color: rgba(255,255,255,.7); }
+
+  .tp-lead {
+    color: var(--tp-text); max-width: 54ch;
+    font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;
+  }
+
+  .tp-badges {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+  }
+  .tp-badge {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.14);
+    color: rgba(255,255,255,.92);
+    padding: .55rem .7rem; border-radius: 999px;
+    font-size: .85rem;
+  }
+
+  .tp-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+  .tp-btn-primary {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.2rem;
+    background: #0d6efd; color: #fff; border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    text-decoration: none; font-weight: 600; font-size: 1rem;
+  }
+  .tp-btn-primary:hover { background: #0b5ed7; text-decoration: none; }
+  .tp-btn-outline {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.2rem;
+    border: 1px solid rgba(255,255,255,.35);
+    color: rgba(255,255,255,.92); background: transparent;
+    text-decoration: none; font-weight: 600; font-size: 1rem;
+  }
+  .tp-btn-outline:hover { border-color: rgba(255,255,255,.55); color: #fff; text-decoration: none; }
+
+  .tp-contact { font-size: .85rem; color: rgba(255,255,255,.7); }
+  .tp-contact a { color: rgba(255,255,255,.85); }
+
+  /* GLASS CARD */
+  .tp-card-glass {
+    background: var(--tp-card);
+    border: 1px solid var(--tp-border);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+    backdrop-filter: blur(14px);
+    padding: 24px;
+  }
+  .tp-card-header {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;
+  }
+  .tp-card-title { font-weight: 600; }
+  .tp-badge-beta {
+    background: #f8f9fa; color: #333;
+    padding: 4px 10px; border-radius: 6px;
+    font-size: .75rem; font-weight: 600;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+  .tp-card-mini { color: var(--tp-muted); margin-bottom: 16px; font-size: .9rem; }
+  .tp-card-img { width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); }
+  .tp-card-list {
+    margin-top: 16px; padding-left: 18px; color: rgba(255,255,255,.8);
+  }
+  .tp-card-list li { margin-bottom: 6px; font-size: .9rem; }
+
+  /* HOW IT WORKS - LIGHT SECTION */
+  .tp-light {
+    background: #f4f5f7; color: #111;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-section-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 16px; margin-bottom: 24px;
+  }
+  .tp-section-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; }
+  .tp-section-sub { color: #666; margin: 0; }
+
+  .tp-btn-dark {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.05rem;
+    background: #111; color: #fff; border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    text-decoration: none; font-weight: 600;
+  }
+  .tp-btn-dark:hover { background: #222; color: #fff; text-decoration: none; }
+
+  .tp-features-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px;
+  }
+  @media(max-width:768px) { .tp-features-grid { grid-template-columns: 1fr; } }
+
+  .tp-feature {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  .tp-icon-light {
+    width: 44px; height: 44px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,.07);
+    border: 1px solid rgba(0,0,0,.1);
+    color: #111; font-weight: 700; font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .tp-feature-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+  .tp-feature-text { color: #666; margin: 0; font-size: .95rem; line-height: 1.5; }
+
+  .tp-panels-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;
+  }
+  @media(max-width:768px) { .tp-panels-grid { grid-template-columns: 1fr; } }
+
+  .tp-panel {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  }
+
+  .tp-cta-light {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+    margin-top: 32px;
+  }
+  .tp-cta-content {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .tp-cta-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+
+  /* FOOTER */
+  .tp-footer-info {
+    background: var(--tp-bg); color: var(--tp-text);
+    text-align: center; padding: 24px 0;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-footer-licence { max-width: 480px; margin: 0 auto; font-size: .85rem; }
+  .tp-footer-licence p { margin: 4px 0; }
+
+  /* Override BaseLayout for dark sections */
+  .ad-slot {
+    background: rgba(255,255,255,.04) !important;
+    border-color: rgba(255,255,255,.1) !important;
+    color: rgba(255,255,255,.5) !important;
+  }
 </style>

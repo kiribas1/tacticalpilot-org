@@ -3,89 +3,355 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="TacticalPilot | Onboarding & Workflow Automation CRM"
-  description="Standardize every new hire and keep an audit trail of tasks, approvals and evidence. Company activation, end-to-end."
+  title="TacticalPilot — Onboarding & Workflow Automation"
+  description="TacticalPilot helps companies onboard employees with guided steps, permissions, role-based tasks and CRM request routing — multilingual and country-aware."
   lang="en"
 >
   <Fragment slot="logo">TacticalPilot</Fragment>
   <Fragment slot="footer-name">TacticalPilot</Fragment>
 
-  <section class="hero">
-    <img src="/images/logo.webp" alt="Logo" class="hero-logo" width="200" height="auto" />
-    <h1>TacticalPilot</h1>
-    <p class="tagline">Company Activation, End-to-End</p>
-    <p>Standardize every new hire and keep an audit trail of tasks, approvals and evidence.</p>
+  <!-- HERO -->
+  <section class="tp-hero position-relative overflow-hidden">
+    <div class="tp-hero-bg"></div>
+    <div class="tp-container position-relative tp-py-5">
+      <div class="tp-row">
+        <div class="tp-col-left">
+          <div class="tp-pill">
+            <span class="tp-dot"></span>
+            <span class="tp-pill-text">Invite-only beta</span>
+            <span class="tp-divider"></span>
+            <span class="tp-pill-sub">The platform is live and working — access is granted by invitation.</span>
+          </div>
+          <div class="tp-hero-brand">
+            <img src="/images/logo.webp" alt="TacticalPilot" class="tp-logo" width="100" height="100" />
+            <div>
+              <h1 class="tp-title">TacticalPilot</h1>
+              <div class="tp-subtitle">Onboarding & Workflow Automation CRM</div>
+            </div>
+          </div>
+          <p class="tp-lead">
+            A single workspace to onboard employees, enforce operational steps, assign permissions and route customer requests — multilingual and country-aware.
+          </p>
+          <div class="tp-badges">
+            <span class="tp-badge">Onboarding steps</span>
+            <span class="tp-badge">Permissions & groups</span>
+            <span class="tp-badge">Role workflows</span>
+            <span class="tp-badge">CRM routing</span>
+            <span class="tp-badge">Multilingual</span>
+          </div>
+          <div class="tp-buttons">
+            <a class="tp-btn-primary" href="mailto:info@tacticalpilot.org?subject=Request%20invite%20(TacticalPilot)">Request invite</a>
+            <a class="tp-btn-outline" href="#how-it-works">How it works</a>
+          </div>
+          <div class="tp-contact">
+            Contact: <a href="mailto:info@tacticalpilot.org">info@tacticalpilot.org</a>
+          </div>
+        </div>
+        <div class="tp-col-right">
+          <div class="tp-card-glass">
+            <div class="tp-card-header">
+              <div class="tp-card-title">Company activation, end-to-end</div>
+              <span class="tp-badge-beta">Beta</span>
+            </div>
+            <div class="tp-card-mini">Standardize every new hire and keep an audit trail of tasks, approvals and evidence.</div>
+            <img src="/images/logo.webp" class="tp-card-img" alt="TacticalPilot preview" loading="lazy" />
+            <ul class="tp-card-list">
+              <li>Managers define required steps (email, tools, access, documents…).</li>
+              <li>Employees complete steps in a guided private workspace.</li>
+              <li>Requests and exceptions are routed with SLA, notes and evidence.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="ad-slot">Ad Space - Google AdSense</div>
 
-  <div class="card-grid">
-    <article class="card">
-      <h2>Onboarding Workflow</h2>
-      <p>Managers define required steps (email, tools, access, documents). Role-specific checklists for email setup, device allocation, security protocols, documentation, and location-specific requirements.</p>
-    </article>
-    <article class="card">
-      <h2>Guided Workspace</h2>
-      <p>Employees complete steps in a guided private workspace. Each step is tracked with status, notes, and evidence.</p>
-    </article>
-    <article class="card">
-      <h2>CRM Routing</h2>
-      <p>Customer requests routed to appropriate staff with SLA, status tracking, notes, and complete audit documentation.</p>
-    </article>
-    <article class="card">
-      <h2>Permissions & Groups</h2>
-      <p>Permission assignment at group or individual levels. Permissions automatically trigger associated tasks and approval processes.</p>
-    </article>
-    <article class="card">
-      <h2>Country-Aware</h2>
-      <p>Supports region-specific operational variations and localized procedures for international teams.</p>
-    </article>
-    <article class="card">
-      <h2>Multilingual</h2>
-      <p>Employees view content in their language while management receives unified reporting.</p>
-    </article>
-  </div>
+  <!-- HOW IT WORKS -->
+  <section class="tp-light" id="how-it-works">
+    <div class="tp-container tp-py-5">
+      <div class="tp-section-header">
+        <div>
+          <h2 class="tp-section-title">How it works</h2>
+          <p class="tp-section-sub">Build role-based onboarding, permission-driven tasks, and CRM routing — in one consistent system.</p>
+        </div>
+        <a class="tp-btn-dark" href="mailto:info@tacticalpilot.org?subject=Demo%20request%20(TacticalPilot)">Request a demo</a>
+      </div>
 
-  <div class="ad-slot">Ad Space - Google AdSense</div>
+      <div class="tp-features-grid">
+        <div class="tp-feature">
+          <div class="tp-icon-light">1</div>
+          <h3 class="tp-feature-title">Onboarding workflow</h3>
+          <p class="tp-feature-text">Create a checklist for every role: accounts, email alias, devices, security rules, required documents, country-specific steps.</p>
+        </div>
+        <div class="tp-feature">
+          <div class="tp-icon-light">2</div>
+          <h3 class="tp-feature-title">Permissions drive tasks</h3>
+          <p class="tp-feature-text">Assign permissions by group or individually. Each permission can automatically generate tasks and approvals.</p>
+        </div>
+        <div class="tp-feature">
+          <div class="tp-icon-light">3</div>
+          <h3 class="tp-feature-title">CRM routing</h3>
+          <p class="tp-feature-text">Customer requests are routed to the designated employee/team, with SLA, status, notes and audit trail.</p>
+        </div>
+      </div>
 
-  <section class="registration-info">
-    <h2>Contact & Registration</h2>
-    <p><strong>Email:</strong> info@tacticalpilot.org</p>
-    <p><strong>Status:</strong> Live - Invite Only Beta</p>
-    <p><strong>Location:</strong> Noregon - London (KI)</p>
-    <p><strong>License:</strong> KBN-40-000003 (KIFA)</p>
+      <div class="tp-panels-grid">
+        <div class="tp-panel">
+          <h3 class="tp-feature-title">Country-aware operations</h3>
+          <p class="tp-feature-text">Roles and procedures can differ by country. TacticalPilot supports country-based rules, required steps and localized content.</p>
+        </div>
+        <div class="tp-panel">
+          <h3 class="tp-feature-title">Multilingual by design</h3>
+          <p class="tp-feature-text">Employees from different countries see steps and tasks in their language, while managers get unified reporting.</p>
+        </div>
+      </div>
+
+      <div class="tp-cta-light">
+        <div class="tp-cta-content">
+          <div>
+            <h2 class="tp-cta-title">TacticalPilot is live (beta)</h2>
+            <p class="tp-feature-text">Access is currently invite-only. Send an email and tell us your company size and use-case to receive an invite.</p>
+          </div>
+          <a class="tp-btn-primary" href="mailto:info@tacticalpilot.org?subject=Invite%20request%20(TacticalPilot)">Request invite</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="ad-slot">Ad Space - Google AdSense</div>
+
+  <section class="tp-footer-info">
+    <div class="tp-footer-licence">
+      <p>&copy; 2026 Tactical Pilot. All rights reserved.</p>
+      <p>Address: Noregon - London (KI)</p>
+      <p><strong>Licence No.:</strong> KBN-40-000003</p>
+      <p>Authority: Kiribati International Financial Authority (KIFA)</p>
+    </div>
+  </section>
 </BaseLayout>
 
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+</style>
+
 <style>
-  .hero-logo {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+  :root {
+    --tp-bg: #0b0c10;
+    --tp-card: rgba(255,255,255,.06);
+    --tp-border: rgba(255,255,255,.14);
+    --tp-text: rgba(255,255,255,.86);
+    --tp-muted: rgba(255,255,255,.62);
   }
-  .tagline {
-    font-size: 1.4rem;
-    font-weight: 600;
-    opacity: 1;
-    margin-bottom: 8px;
+
+  .tp-container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  .tp-py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+
+  /* HERO */
+  .tp-hero {
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    font-family: 'Jura', sans-serif;
   }
-  .registration-info {
-    background: white;
-    border-radius: 8px;
-    padding: 32px;
+  .tp-hero-bg {
+    position: absolute; inset: -2px;
+    background:
+      radial-gradient(800px 400px at 20% 20%, rgba(80,120,255,.35), transparent 60%),
+      radial-gradient(600px 380px at 80% 30%, rgba(170,60,255,.28), transparent 65%),
+      radial-gradient(700px 500px at 55% 95%, rgba(40,220,160,.18), transparent 55%),
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+    filter: saturate(1.05);
+    pointer-events: none;
+  }
+  .tp-row {
+    display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;
+  }
+  .tp-col-left { flex: 1; min-width: 300px; }
+  .tp-col-right { flex: 0 0 380px; min-width: 280px; }
+  @media(max-width:900px) { .tp-col-right { flex: 1 1 100%; } }
+
+  .tp-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px; padding: 8px 12px;
+    color: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    margin-bottom: 16px; font-size: .85rem;
+  }
+  .tp-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #4cffb5;
+    box-shadow: 0 0 0 3px rgba(76,255,181,.16);
+    flex-shrink: 0;
+  }
+  .tp-divider {
+    width: 1px; height: 16px;
+    background: rgba(255,255,255,.18);
+  }
+  .tp-pill-text { font-weight: 600; }
+  .tp-pill-sub { color: rgba(255,255,255,.7); }
+
+  .tp-hero-brand {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 16px;
+  }
+  .tp-logo {
+    border-radius: 14px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
+    padding: 10px;
+  }
+  .tp-title {
+    font-size: 2.5rem; font-weight: 600; margin: 0;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-subtitle { color: rgba(255,255,255,.7); }
+
+  .tp-lead {
+    color: var(--tp-text); max-width: 54ch;
+    font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;
+  }
+
+  .tp-badges {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+  }
+  .tp-badge {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.14);
+    color: rgba(255,255,255,.92);
+    padding: .55rem .7rem; border-radius: 999px;
+    font-size: .85rem;
+  }
+
+  .tp-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+  .tp-btn-primary {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.2rem;
+    background: #0d6efd; color: #fff; border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    text-decoration: none; font-weight: 600; font-size: 1rem;
+  }
+  .tp-btn-primary:hover { background: #0b5ed7; text-decoration: none; }
+  .tp-btn-outline {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.2rem;
+    border: 1px solid rgba(255,255,255,.35);
+    color: rgba(255,255,255,.92); background: transparent;
+    text-decoration: none; font-weight: 600; font-size: 1rem;
+  }
+  .tp-btn-outline:hover { border-color: rgba(255,255,255,.55); color: #fff; text-decoration: none; }
+
+  .tp-contact { font-size: .85rem; color: rgba(255,255,255,.7); }
+  .tp-contact a { color: rgba(255,255,255,.85); }
+
+  /* GLASS CARD */
+  .tp-card-glass {
+    background: var(--tp-card);
+    border: 1px solid var(--tp-border);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+    backdrop-filter: blur(14px);
+    padding: 24px;
+  }
+  .tp-card-header {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;
+  }
+  .tp-card-title { font-weight: 600; }
+  .tp-badge-beta {
+    background: #f8f9fa; color: #333;
+    padding: 4px 10px; border-radius: 6px;
+    font-size: .75rem; font-weight: 600;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+  .tp-card-mini { color: var(--tp-muted); margin-bottom: 16px; font-size: .9rem; }
+  .tp-card-img { width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); }
+  .tp-card-list {
+    margin-top: 16px; padding-left: 18px; color: rgba(255,255,255,.8);
+  }
+  .tp-card-list li { margin-bottom: 6px; font-size: .9rem; }
+
+  /* HOW IT WORKS - LIGHT SECTION */
+  .tp-light {
+    background: #f4f5f7; color: #111;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-section-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 16px; margin-bottom: 24px;
+  }
+  .tp-section-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; }
+  .tp-section-sub { color: #666; margin: 0; }
+
+  .tp-btn-dark {
+    display: inline-block; border-radius: 14px;
+    padding: .85rem 1.05rem;
+    background: #111; color: #fff; border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    text-decoration: none; font-weight: 600;
+  }
+  .tp-btn-dark:hover { background: #222; color: #fff; text-decoration: none; }
+
+  .tp-features-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px;
+  }
+  @media(max-width:768px) { .tp-features-grid { grid-template-columns: 1fr; } }
+
+  .tp-feature {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  .tp-icon-light {
+    width: 44px; height: 44px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,.07);
+    border: 1px solid rgba(0,0,0,.1);
+    color: #111; font-weight: 700; font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .tp-feature-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+  .tp-feature-text { color: #666; margin: 0; font-size: .95rem; line-height: 1.5; }
+
+  .tp-panels-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;
+  }
+  @media(max-width:768px) { .tp-panels-grid { grid-template-columns: 1fr; } }
+
+  .tp-panel {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  }
+
+  .tp-cta-light {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 22px; padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
     margin-top: 32px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    text-align: center;
   }
-  .registration-info h2 {
-    margin-bottom: 16px;
-    color: #1a1a2e;
+  .tp-cta-content {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
   }
-  .registration-info p {
-    margin: 6px 0;
-    color: #555;
+  .tp-cta-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+
+  /* FOOTER */
+  .tp-footer-info {
+    background: var(--tp-bg); color: var(--tp-text);
+    text-align: center; padding: 24px 0;
+    font-family: 'Jura', sans-serif;
+  }
+  .tp-footer-licence { max-width: 480px; margin: 0 auto; font-size: .85rem; }
+  .tp-footer-licence p { margin: 4px 0; }
+
+  /* Override BaseLayout for dark sections */
+  .ad-slot {
+    background: rgba(255,255,255,.04) !important;
+    border-color: rgba(255,255,255,.1) !important;
+    color: rgba(255,255,255,.5) !important;
   }
 </style>
